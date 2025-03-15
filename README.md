@@ -2,15 +2,14 @@
 
 ## Overview
 This workshop showcases the new Amazon Bedrock Agents feature [multi-agent collaboration capabilities](https://docs.aws.amazon.com/bedrock/latest/userguide/agents-multi-agent-collaboration.html) through an Energy Efficiency Management System. 
-The system consists of a supervisor agent that orchestrates three specialized sub-agents, each handling specific aspects of energy management and customer service.
+The system consists of a supervisor agent that orchestrates two specialized sub-agents, each handling specific aspects of energy management and customer service.
 
 ## System Architecture
 ```
 ├── 1- Forecasting Agent
 ├── 2- Solar Panel Agent
-├── 3- Peak Load Manager Agent
-├── 4- Energy Efficiency Management Agent (Supervisor)
-└── 5- Clean up
+├── 3- Energy Efficiency Management Agent (Supervisor)
+└── 4- Clean up
 ```
 
 ## Agents Description
@@ -36,18 +35,12 @@ ensuring seamless interactions. The architecture looks as following:
 - Enables support ticket creation
 - Tracks existing support tickets
 
-#### 3. Peak Load Manager Agent
-- Identifies non-essential processes
-- Analyzes peak vs. off-peak usage
-- Optimizes grid allocation
-
 ## Workshop Contents
 1. Forecast agent setup
 2. Solar panel agent setup
-3. Peak load manager agent
-4. Multi-agent collaboration setup
-5. Supervisor agent invocation
-6. Clear up
+3. Multi-agent collaboration setup
+4. Supervisor agent invocation
+5. Clear up
 
 ## Prerequisites
 - AWS Account with appropriate permissions
@@ -63,7 +56,7 @@ ensuring seamless interactions. The architecture looks as following:
 git clone https://github.com/aws-samples/bedrock-multi-agents-collaboration-workshop.git
 ```
 
-2. Install dependencies
+2. Install dependencies (Not required if you are using Jupyterlab in Sagemaker Studio)
 ```bash
 pip install -r requirements.txt
 ```
